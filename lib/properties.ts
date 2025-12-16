@@ -75,12 +75,30 @@ export const PROPERTIES: Property[] = [
       "Respect neighbors and common areas",
       "Keep the apartment tidy; damages will be charged"
     ],
-    faqs: [
-      { q: "Is the apartment suitable for families?", a: "Yes. The layout is comfortable for families and small groups, with a kitchen and living/dining space." },
-      { q: "Do you provide hot water?", a: "Yes — the bathroom includes hot water." },
-      { q: "Is parking available?", a: "Yes, a dedicated parking facility is available at the building." },
-      { q: "How close is Gregory Lake?", a: "Gregory Lake is one of the closest highlights — perfect for evening walks and family time." }
-    ]
+   faqs: [
+  {
+    q: "What is the check-in and check-out time?",
+    a: "Check-in is from 2:00 PM, and check-out is by 11:00 AM. Early check-in or late check-out may be arranged subject to availability."
+  },
+  {
+    q: "Is the apartment suitable for families and groups?",
+    a: "Yes. The apartment is ideal for families, couples, and small groups, offering spacious bedrooms, a living area, and a fully equipped kitchen."
+  },
+  {
+    q: "Do you provide hot water and heating?",
+    a: "Yes. Hot water is available in the bathroom, and the cool climate of Nuwara Eliya ensures a naturally comfortable stay."
+  },
+  {
+    q: "Is parking available on-site?",
+    a: "Yes. Secure on-site parking is available for guests."
+  },
+  {
+    q: "How far is Gregory Lake from the apartment?",
+    a: "Gregory Lake is located very close to the apartment and is easily accessible for walks, boating, and leisure activities."
+  },
+ 
+]
+
   },
   {
     slug: "kahathuduwa-canterbury-golf-view",
@@ -137,10 +155,29 @@ export const PROPERTIES: Property[] = [
       "Keep noise to a minimum after 10 PM"
     ],
     faqs: [
-      { q: "Is the master bedroom air-conditioned?", a: "Yes — the master bedroom is air-conditioned for extra comfort." },
-      { q: "Do you have a swimming pool and gym?", a: "Yes — the building includes a large swimming pool and a fully equipped gym." },
-      { q: "Is this good for long-term stays?", a: "Yes. The space, amenities, and expressway access make it ideal for long-term and business stays." }
-    ]
+  {
+    q: "What are the check-in and check-out times?",
+    a: "Check-in starts from 2:00 PM and check-out is by 11:00 AM. Flexible arrangements can be discussed based on availability."
+  },
+  {
+    q: "Is the apartment suitable for long-term stays?",
+    a: "Yes. With spacious interiors, full amenities, and easy access to the Southern Expressway, the apartment is well suited for long-term and corporate stays."
+  },
+ 
+  {
+    q: "Are the swimming pool and gym available to guests?",
+    a: "Yes. Guests have full access to the swimming pool, gym, and other shared facilities within the complex."
+  },
+  {
+    q: "Is the apartment family-friendly?",
+    a: "Absolutely. The apartment offers ample space, secure surroundings, and family-friendly amenities."
+  },
+  {
+    q: "How convenient is the location?",
+    a: "The apartment is conveniently located near the Southern Expressway, supermarkets, restaurants, and Piliyandala town."
+  }
+]
+
   }
 ];
 

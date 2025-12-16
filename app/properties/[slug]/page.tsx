@@ -204,18 +204,29 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                          </div>
                      </div>
 
-                     <Button asChild size="lg" className="w-full rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg shadow-green-500/20">
-                        <a href={buildWhatsAppLink(property)} target="_blank" rel="noreferrer" className="gap-2">
-                           <Image 
-                                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                                alt="WA" 
-                                width={20} 
-                                height={20} 
-                                className="brightness-0 invert"
-                            />
-                           Check Availability
-                        </a>
-                     </Button>
+ <Button
+  asChild
+  size="lg"
+  className="w-full rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg shadow-green-500/20"
+>
+  <a
+    href={buildWhatsAppLink(property)}
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center justify-center gap-2"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+      width={20}
+      height={20}
+      className="h-5 w-5"
+    />
+    Check Availability
+  </a>
+</Button>
+
+
                      
                      <p className="mt-4 text-center text-xs text-muted-foreground">
                         You&apos;ll be redirected to WhatsApp to chat directly with our reservation team.
