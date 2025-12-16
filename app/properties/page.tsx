@@ -47,7 +47,7 @@ export default function PropertiesPage() {
         {/* Bottom CTA */}
         <section className="py-24 bg-muted/30">
             <div className="container text-center">
-                <h2 className="text-3xl font-bold mb-6">Can't decide?</h2>
+                <h2 className="text-3xl font-bold mb-6">Can&apos;t decide?</h2>
                 <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-lg">
                     Contact our concierge team for a personalized recommendation based on your travel plans.
                 </p>

@@ -218,7 +218,7 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                      </Button>
                      
                      <p className="mt-4 text-center text-xs text-muted-foreground">
-                        You'll be redirected to WhatsApp to chat directly with our reservation team.
+                        You&apos;ll be redirected to WhatsApp to chat directly with our reservation team.
                      </p>
                  </div>
               </div>

@@ -98,8 +98,8 @@ export default function ContactPage() {
               {/* Right Column: Direct Booking Links */}
               <div className="rounded-3xl border bg-card p-8 shadow-lg md:p-12">
                  <h2 className="text-2xl font-bold mb-2">Instant Booking Inquiry</h2>
-                 <p className="text-muted-foreground mb-8">
-                    Select a property below to start a WhatsApp chat with pre-filled details. It's the fastest way to book.
+                 <p className="mb-4 text-muted-foreground">
+                  We&apos;re here to help! Reach out to us via WhatsApp for the fastest response.
                  </p>
 
                  <div className="space-y-4">

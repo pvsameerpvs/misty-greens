@@ -38,7 +38,7 @@ export default function AboutPage() {
                     Where Nature Meets <span className="text-primary">Luxury</span>
                  </h2>
                  <p className="text-lg leading-relaxed text-muted-foreground">
-                    At Misty Greens, we believe that true luxury lies in the harmony between comfort and nature. Founded with a vision to provide travelers and residents with premium living spaces in Sri Lanka's most serene locations, we offer more than just an apartment — we offer a sanctuary.
+                    At Misty Greens, we believe that true luxury lies in the harmony between comfort and nature. Founded with a vision to provide travelers and residents with premium living spaces in Sri Lanka&apos;s most serene locations, we offer more than just an apartment — we offer a sanctuary.
                  </p>
                  <p className="text-lg leading-relaxed text-muted-foreground">
                     Whether you are waking up to the misty hills of Nuwara Eliya or enjoying the prestigious golf-course views in Kahathuduwa, our properties are curated to ensure an unforgettable experience of tranquility, elegance, and convenience.
