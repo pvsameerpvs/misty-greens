@@ -1,0 +1,25 @@
+import type { Property } from "@/lib/properties";
+
+export function getWhatsAppNumber() {
+  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9477XXXXXXX";
+}
+
+export function getEmail() {
+  return process.env.NEXT_PUBLIC_EMAIL || "your@email.com";
+}
+
+export function buildWhatsAppLink(property: Property) {
+  const number = getWhatsAppNumber().replace(/[^0-9]/g, "");
+  const text = [
+    "Hi Misty Greens 👋",
+    `I’d like to book / inquire about: ${property.name}`,
+    `Location: ${property.city}, ${property.country}`,
+    "",
+    "Dates: ____ to ____",
+    "Guests: ____",
+    "Any special requests: ____"
+  ].join("\n");
+
+  const encoded = encodeURIComponent(text);
+  return `https://wa.me/${number}?text=${encoded}`;
+}
