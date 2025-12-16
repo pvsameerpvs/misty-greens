@@ -3,7 +3,15 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { BookingWidget } from "@/components/booking-widget";
-import { Wifi, MapPin, PawPrint } from "lucide-react";
+import { Star, MapPin, Mountain, Home } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export function HeroSection() {
   return (
@@ -61,19 +69,75 @@ export function HeroSection() {
            </div>
 
            {/* Mini Map (Bottom Left) */}
-           <div className="absolute bottom-[20%] left-0 h-32 w-32 overflow-hidden rounded-full border-2 border-white/50 shadow-2xl">
-              <Image 
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=300&auto=format&fit=crop" 
-                alt="Map Preview"
-                fill
-                className="object-cover opacity-80"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                 <MapPin className="h-8 w-8 text-black" fill="#fff" />
-              </div>
+ 
+           {/* Mini Map - Interactive */}
+           <div className="absolute bottom-[20%] left-0 z-30">
+               <Dialog>
+                   <DialogTrigger asChild>
+                       <div className="h-32 w-32 cursor-pointer overflow-hidden rounded-full border-2 border-white/50 shadow-2xl transition-transform hover:scale-105 hover:border-white pointer-events-auto">
+                           <iframe
+                               src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk`}
+                               className="h-full w-full object-cover pointer-events-none"
+                               style={{ border: 0, opacity: 0.8 }}
+                               loading="lazy"
+                               referrerPolicy="no-referrer-when-downgrade"
+                               title="Property Location Preview"
+                           />
+                           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <div className="rounded-full bg-white/20 p-2 backdrop-blur-sm">
+                                   <MapPin className="h-5 w-5 text-black drop-shadow-md" fill="#fff" />
+                                </div>
+                           </div>
+                       </div>
+                   </DialogTrigger>
+                   <DialogContent className="max-w-4xl bg-white/95 backdrop-blur-xl">
+                       <DialogHeader>
+                           <DialogTitle className="text-2xl font-bold">Our Locations</DialogTitle>
+                           <DialogDescription>
+                               Explore our premium locations in Nuwara Eliya and Kahathuduwa.
+                           </DialogDescription>
+                       </DialogHeader>
+                       <div className="grid gap-6 md:grid-cols-2 mt-4 h-[60vh] md:h-[500px]">
+                           <div className="flex flex-col gap-2 h-full">
+                               <h3 className="font-semibold flex items-center gap-2">
+                                  <Mountain className="h-4 w-4 text-primary" /> Nuwara Eliya
+                               </h3>
+                               <div className="flex-1 overflow-hidden rounded-xl border shadow-inner">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Nuwara Eliya Location"
+                                   />
+                               </div>
+                           </div>
+                            <div className="flex flex-col gap-2 h-full">
+                               <h3 className="font-semibold flex items-center gap-2">
+                                  <Home className="h-4 w-4 text-primary" /> Kahathuduwa
+                               </h3>
+                               <div className="flex-1 overflow-hidden rounded-xl border shadow-inner">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80385596489!2d79.996162391696!3d6.820392078696788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25171761667b3%3A0x88c2f254e0c3886f!2sKahathuduwa!5e0!3m2!1sen!2slk!4v1716913456789!5m2!1sen!2slk"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Kahathuduwa Location"
+                                   />
+                               </div>
+                           </div>
+                       </div>
+                   </DialogContent>
+               </Dialog>
            </div>
 
-            <div className="absolute bottom-[20%] right-0 text-right text-white">
+            <div className="absolute bottom-[25%] right-0 text-right text-white">
                <div className="flex items-center justify-end gap-1 text-5xl font-bold">
                   <span className="text-primary">★</span> 4.9
                </div>
@@ -82,9 +146,10 @@ export function HeroSection() {
         </div>
 
         {/* Booking Widget (Bottom) */}
-        <div className="relative z-20 mt-auto w-full">
-          <BookingWidget />
-        </div>
+      <div className="relative z-20 mt-auto w-full -translate-y-10">
+  <BookingWidget />
+</div>
+
       </div>
     </section>
   );

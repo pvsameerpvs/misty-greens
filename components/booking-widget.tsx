@@ -47,13 +47,13 @@ export function BookingWidget() {
       <div className="group relative flex w-full flex-1 flex-col justify-center px-6 py-3 transition-colors hover:bg-white/5 sm:rounded-l-[1.5rem] sm:border-r sm:border-white/10">
         <Popover open={isRoomOpen} onOpenChange={setIsRoomOpen}>
           <PopoverTrigger asChild>
-            <div className="flex cursor-pointer items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+            <div className="flex cursor-pointer items-center gap-3 ">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-white transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <Home className="h-5 w-5" />
               </div>
               <div className="flex-1 text-left">
-                <div className="text-xs font-medium text-muted-foreground group-hover:text-primary">Room</div>
-                <div className="truncate font-semibold text-foreground">{room.name}</div>
+                <div className="text-xs font-medium text-white group-hover:text-primary">Room</div>
+                <div className="truncate font-semibold text-white">{room.name}</div>
               </div>
             </div>
           </PopoverTrigger>
@@ -88,12 +88,12 @@ export function BookingWidget() {
         <Popover>
           <PopoverTrigger asChild>
             <div className="flex cursor-pointer items-center gap-3">
-               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-white transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <Calendar className="h-5 w-5" />
               </div>
               <div className="text-left">
-                <div className="text-xs font-medium text-muted-foreground group-hover:text-primary">Check-in</div>
-                <div className="font-semibold text-foreground">
+                <div className="text-xs font-medium text-white group-hover:text-primary">Check-in</div>
+                <div className="font-semibold text-white">
                   {checkIn ? format(checkIn, "dd MMM") : "Select"}
                 </div>
               </div>
@@ -116,12 +116,12 @@ export function BookingWidget() {
          <Popover>
           <PopoverTrigger asChild>
             <div className="flex cursor-pointer items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-white transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <Calendar className="h-5 w-5" />
               </div>
               <div className="text-left">
-                <div className="text-xs font-medium text-muted-foreground group-hover:text-primary">Check-out</div>
-                <div className="font-semibold text-foreground">
+                <div className="text-xs font-medium text-white group-hover:text-primary">Check-out</div>
+                <div className="font-semibold text-white">
                    {checkOut ? format(checkOut, "dd MMM") : "Select"}
                 </div>
               </div>
@@ -144,12 +144,12 @@ export function BookingWidget() {
          <Popover open={isGuestOpen} onOpenChange={setIsGuestOpen}>
           <PopoverTrigger asChild>
             <div className="flex cursor-pointer items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-white transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <Users className="h-5 w-5" />
               </div>
               <div className="text-left">
-                <div className="text-xs font-medium text-muted-foreground group-hover:text-primary">Guests</div>
-                <div className="font-semibold text-foreground">{guests} {guests === 1 ? 'Guest' : 'Guests'}</div>
+                <div className="text-xs font-medium text-white group-hover:text-primary">Guests</div>
+                <div className="font-semibold text-white">{guests} {guests === 1 ? 'Guest' : 'Guests'}</div>
               </div>
             </div>
           </PopoverTrigger>

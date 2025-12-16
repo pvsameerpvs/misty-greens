@@ -1,22 +1,62 @@
+import Link from "next/link";
+import Image from "next/image";
 import { PROPERTIES } from "@/lib/properties";
-import { PropertyCard } from "@/components/property-card";
+import { ApartmentSection } from "@/components/apartment-section";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export default function PropertiesPage() {
   return (
-    <div className="container py-12">
-      <div className="max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight">Our Properties</h1>
-        <p className="mt-2 text-muted-foreground">
-          Two premium apartments in Sri Lanka — one in Nuwara Eliya with Gregory Lake views, and one in Kahathuduwa overlooking Canterbury Golf Course.
-          Choose your stay and book instantly via WhatsApp.
-        </p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <main>
+        {/* Properties Hero */}
+        <section className="relative flex h-[50vh] min-h-[400px] items-center justify-center overflow-hidden">
+           <Image
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
+              alt="Misty Greens Collection"
+              fill
+              className="object-cover brightness-50"
+              priority
+           />
+           <div className="container relative z-10 text-center text-white">
+              <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-7xl">Our Collection</h1>
+              <p className="mx-auto max-w-2xl text-xl font-light text-white/90">
+                Discover our handpicked portfolio of luxury holiday apartments in Sri Lanka.
+              </p>
+           </div>
+        </section>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {PROPERTIES.map((p) => (
-          <PropertyCard key={p.slug} property={p} />
-        ))}
-      </div>
+        {/* Listings using the Premium ApartmentSection */}
+        <div>
+           {PROPERTIES.map((property, index) => (
+            <ApartmentSection
+              key={property.slug}
+              reversed={index % 2 !== 0}
+              title={property.name}
+              location={property.locationShort}
+              slug={property.slug}
+              description={property.description}
+              imageSrc={property.imageSrc}
+              features={property.features}
+              amenities={property.amenities}
+              nearby={property.nearby}
+            />
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <section className="py-24 bg-muted/30">
+            <div className="container text-center">
+                <h2 className="text-3xl font-bold mb-6">Can't decide?</h2>
+                <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-lg">
+                    Contact our concierge team for a personalized recommendation based on your travel plans.
+                </p>
+                <Link href="/contact">
+                    <Button size="lg" className="rounded-full px-8">Contact Us</Button>
+                </Link>
+            </div>
+        </section>
+      </main>
     </div>
   );
 }
