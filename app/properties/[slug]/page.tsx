@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, BedDouble, Bath, Users, MapPin, CheckCircle2, Star, Share2, Wifi, Car, Shield, Wind, Grid2X2 } from "lucide-react";
+import { ArrowLeft, BedDouble, Bath, Users, MapPin, CheckCircle2, Star, Share2, Wifi, Car, Shield, Wind, Grid2X2, Phone } from "lucide-react";
 import { getProperty, PROPERTIES } from "@/lib/properties";
 import { buildWhatsAppLink } from "@/lib/booking";
 import { Button } from "@/components/ui/button";
@@ -213,6 +213,17 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                              <span className="font-semibold">{property.checkOut}</span>
                          </div>
                      </div>
+
+                     {property.contactNumbers && (
+                        <div className="mb-6 space-y-2">
+                            {property.contactNumbers.map((number, i) => (
+                                <a key={i} href={`tel:${number}`} className="flex items-center justify-center gap-2 rounded-xl border bg-background p-3 hover:bg-muted transition-colors text-sm font-medium">
+                                    <Phone className="h-4 w-4 text-primary" />
+                                    {number}
+                                </a>
+                            ))}
+                        </div>
+                     )}
 
  <Button
   asChild

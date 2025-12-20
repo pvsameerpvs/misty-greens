@@ -9,7 +9,12 @@ export function getEmail() {
 }
 
 export function buildWhatsAppLink(property: Property) {
-  const number = getWhatsAppNumber().replace(/[^0-9]/g, "");
+  let number = getWhatsAppNumber();
+  if (property.contactNumbers && property.contactNumbers.length > 0) {
+    number = property.contactNumbers[0];
+  }
+  number = number.replace(/[^0-9]/g, "");
+
   const text = [
     "Hi Misty Greens 👋",
     `I’d like to book / inquire about: ${property.name}`,

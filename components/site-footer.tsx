@@ -38,7 +38,7 @@ export function SiteFooter() {
           <div className="space-y-3">
             <div className="font-semibold">Contact</div>
             <div className="text-sm text-muted-foreground">
-              <div>Phone/WhatsApp: {phone}</div>
+              <div>WhatsApp: 0094773540636 / 0094777661193</div>
               <div>Email: {email}</div>
               <div className="mt-2">Sri Lanka</div>
             </div>

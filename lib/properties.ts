@@ -21,6 +21,7 @@ export type Property = {
   houseRules: string[];
   faqs: { q: string; a: string }[];
   galleryImages: string[];
+  contactNumbers: string[];
 };
 
 export const PROPERTIES: Property[] = [
@@ -114,8 +115,8 @@ export const PROPERTIES: Property[] = [
         "/nuwara-eliya-gallary12.jpeg",
         "/nuwara-eliya-gallary13.jpeg",
         
-
     ],
+    contactNumbers: ["0094773540636", "0094779557520"],
 
   },
   {
@@ -200,7 +201,8 @@ export const PROPERTIES: Property[] = [
       "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1571896349842-68ccdac1863f?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1512918760383-edce1d90a8f5?q=80&w=2067&auto=format&fit=crop"
-    ]
+    ],
+    contactNumbers: ["0094777661193", "0094779557520"]
 
   }
 ];
