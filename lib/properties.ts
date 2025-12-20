@@ -33,7 +33,7 @@ export const PROPERTIES: Property[] = [
     headline: "Wake up to cool hill‑country air and sweeping views of Gregory Lake.",
     description:
       "Experience the charm and cool climate of Sri Lanka’s hill country from the comfort of a modern, luxurious apartment. Perfect for families, couples, and holiday seekers looking for relaxation and convenience. Situated in the heart of Nuwara Eliya, close to major attractions, restaurants, and supermarkets. Enjoy beautiful mountain views and easy access to the city’s scenic sites.",
-    imageSrc: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+    imageSrc: "/nuwara-eliya-lakeview-cover.jpeg",
     highlights: [
       "Stunning panoramic view of Nuwara Eliya city",
       "Beautiful Gregory Lake view from the apartment",
@@ -41,8 +41,8 @@ export const PROPERTIES: Property[] = [
       "Walkable access to key attractions and essentials"
     ],
     bedrooms: 2,
-    bathrooms: 1,
-    maxGuests: 5,
+    bathrooms: 2,
+    maxGuests: 6,
     features: [
       "Two spacious, fully furnished bedrooms",
       "Modern living and dining area",
@@ -57,7 +57,7 @@ export const PROPERTIES: Property[] = [
       "Parking facility",
       "Lift access",
       "Backup power",
-      "Beautiful garden area"
+     
     ],
     nearby: [
       "Gregory Lake",

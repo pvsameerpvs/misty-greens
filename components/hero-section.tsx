@@ -20,7 +20,7 @@ export function HeroSection() {
       <div className="absolute inset-0 h-full w-full">
         {/* Placeholder for the mountain background. Ideally user replaces this. */}
         <Image 
-          src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop" 
+          src="/hero-bg.png" 
           alt="Misty Greens Landscape" 
           fill
           priority
@@ -33,7 +33,7 @@ export function HeroSection() {
       <div className="container relative z-10 flex h-full flex-col justify-between pt-32 pb-12">
           {/* Hero Text */}
         <div className="flex flex-col items-center text-center">
-          <h1 className="max-w-4xl text-6xl font-bold tracking-tight text-white drop-shadow-2xl md:text-8xl">
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white drop-shadow-2xl md:text-8xl bg-white/10 backdrop-blur-md px-6 py-3 md:px-12 md:py-6 rounded-full border border-white/20 shadow-xl">
             Misty <span className="text-primary">Greens</span>
           </h1>
           <p className="mt-6 max-w-2xl text-2xl font-light text-white/90 drop-shadow-sm md:text-3xl">

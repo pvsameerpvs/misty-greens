@@ -5,10 +5,8 @@ import { ArrowLeft, BedDouble, Bath, Users, MapPin, CheckCircle2, Star, Share2, 
 import { getProperty, PROPERTIES } from "@/lib/properties";
 import { buildWhatsAppLink } from "@/lib/booking";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SiteHeader } from "@/components/site-header";
-import { SiteFooter } from "@/components/site-footer";
+
 
 export function generateStaticParams() {
   return PROPERTIES.map((p) => ({ slug: p.slug }));
@@ -54,10 +52,10 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                                 <span>Premium Experience</span>
                             </div>
                         </div>
-                        <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl text-shadow-sm">
+                        <h1 className="text-4xl font-bold tracking-tight text-primary/80 md:text-5xl lg:text-6xl text-shadow-sm">
                             {property.name}
                         </h1>
-                        <p className="flex items-center gap-2 text-lg text-white/90">
+                        <p className="flex items-center gap-2 text-lg text-primary/80">
                            <MapPin className="h-5 w-5 text-primary" /> {property.locationShort}
                         </p>
                     </div>
