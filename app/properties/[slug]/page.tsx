@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, BedDouble, Bath, Users, MapPin, CheckCircle2, Star, Share2, Wifi, Car, Shield, Wind } from "lucide-react";
+import { ArrowLeft, BedDouble, Bath, Users, MapPin, CheckCircle2, Star, Share2, Wifi, Car, Shield, Wind, Grid2X2 } from "lucide-react";
 import { getProperty, PROPERTIES } from "@/lib/properties";
 import { buildWhatsAppLink } from "@/lib/booking";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { PropertyGallery } from "@/components/property-gallery";
 
 
 export function generateStaticParams() {
@@ -55,8 +56,8 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                         <h1 className="text-4xl font-bold tracking-tight text-primary/80 md:text-5xl lg:text-6xl text-shadow-sm">
                             {property.name}
                         </h1>
-                        <p className="flex items-center gap-2 text-lg text-primary/80">
-                           <MapPin className="h-5 w-5 text-primary" /> {property.locationShort}
+                        <p className="flex items-center gap-2 text-sm text-primary/80 py-2">
+                           <MapPin className="h-4 w-4 fw-sm text-primary" /> {property.locationShort}
                         </p>
                     </div>
                 </div>
@@ -107,6 +108,17 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                              </div>
                         ))}
                     </div>
+                 </div>
+                 
+
+                 {/* Photo Gallery */}
+                 {/* Photo Gallery */}
+                 <div className="space-y-6">
+                    <div className="flex items-center justify-between">
+                         <h2 className="text-2xl font-bold tracking-tight">Gallery</h2>
+                    </div>
+                    
+                    <PropertyGallery images={property.galleryImages} />
                  </div>
                  
                  <div className="border-t pt-10" />

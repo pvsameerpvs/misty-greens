@@ -20,6 +20,7 @@ export type Property = {
   checkOut: string;
   houseRules: string[];
   faqs: { q: string; a: string }[];
+  galleryImages: string[];
 };
 
 export const PROPERTIES: Property[] = [
@@ -96,8 +97,25 @@ export const PROPERTIES: Property[] = [
     q: "How far is Gregory Lake from the apartment?",
     a: "Gregory Lake is located very close to the apartment and is easily accessible for walks, boating, and leisure activities."
   },
- 
-]
+
+],
+    galleryImages: [
+      "/nuwara-eliya-gallary11.jpeg",
+      "/nuwara-eliya-gallary2.jpeg",
+      "/nuwara-eliya-gallary3.jpeg",
+      "/nuwara-eliya-gallary4.jpeg", 
+       "/nuwara-eliya-gallary5.jpeg", 
+        "/nuwara-eliya-gallary6.jpeg", 
+        "/nuwara-eliya-gallary7.jpeg",
+        "/nuwara-eliya-gallary8.jpeg",
+        "/nuwara-eliya-gallary9.jpeg",
+        "/nuwara-eliya-gallary10.jpeg",
+        "/nuwara-eliya-gallary1.jpeg",
+        "/nuwara-eliya-gallary12.jpeg",
+        "/nuwara-eliya-gallary13.jpeg",
+        
+
+    ],
 
   },
   {
@@ -176,7 +194,13 @@ export const PROPERTIES: Property[] = [
     q: "How convenient is the location?",
     a: "The apartment is conveniently located near the Southern Expressway, supermarkets, restaurants, and Piliyandala town."
   }
-]
+],
+    galleryImages: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571896349842-68ccdac1863f?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512918760383-edce1d90a8f5?q=80&w=2067&auto=format&fit=crop"
+    ]
 
   }
 ];
