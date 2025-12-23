@@ -39,6 +39,7 @@ export function HeroSection() {
           <p className="mt-6 max-w-2xl text-2xl font-light text-white/90 drop-shadow-sm md:text-3xl">
              Nature’s Luxury Escape
           </p>
+          <p className="mt-2 text-lg font-light text-white/90 drop-shadow-sm">Sri Lanka</p>
         </div>
 
         {/* Floating Elements */}

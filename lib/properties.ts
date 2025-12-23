@@ -27,8 +27,8 @@ export type Property = {
 export const PROPERTIES: Property[] = [
   {
     slug: "nuwara-eliya-lakeview-point",
-    name: "Luxury Two-Bedroom Apartment",
-    locationShort: "Nuwara Eliya (Lake View Point)",
+    name: " Lake View Point Nuwara Eliya",
+    locationShort: "Luxury Two-Bedroom Apartment",
     city: "Nuwara Eliya",
     region: "Central Province",
     country: "Sri Lanka",
@@ -121,14 +121,14 @@ export const PROPERTIES: Property[] = [
   },
   {
     slug: "kahathuduwa-canterbury-golf-view",
-    name: "Luxury Three-Bedroom Apartment",
-    locationShort: "Kahathuduwa (Canterbury Golf Course)",
+    name: " Canterbury Golf View Kahathuduwa ",
+    locationShort: "Luxury Three-Bedroom Apartment",
     city: "Kahathuduwa",
     region: "Western Province",
     country: "Sri Lanka",
-    headline: "Premium living with uninterrupted views of the Canterbury Golf Course.",
+    headline: "Premium living with uninterrupted views of the Canterbury Golf View.",
     description:
-      "Experience premium living overlooking the breathtaking Canterbury Golf Course. Perfect for families, executives, or holiday travelers seeking comfort, luxury, and convenience. Situated in Kahathuduwa, Piliyandala – a peaceful residential area with quick access to the Southern Expressway, supermarkets, schools, and restaurants.",
+      "Experience premium living overlooking the breathtaking Canterbury Golf View. Perfect for families, executives, or holiday travelers seeking comfort, luxury, and convenience. Situated in Kahathuduwa, Piliyandala – a peaceful residential area with quick access to the Southern Expressway, supermarkets, schools, and restaurants.",
     imageSrc: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
     highlights: [
       "Direct golf-course view from the balcony",
@@ -159,7 +159,7 @@ export const PROPERTIES: Property[] = [
       "Backup generator"
     ],
     nearby: [
-      "Canterbury Golf Course",
+      "Canterbury Golf View",
       "Southern Expressway entrance",
       "Piliyandala town",
       "Supermarkets & shopping"

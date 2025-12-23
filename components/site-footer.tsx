@@ -21,7 +21,7 @@ export function SiteFooter() {
             </div>
             <p className="text-sm text-muted-foreground">
               Boutique holiday apartments in Sri Lanka — hill‑country serenity in Nuwara Eliya and
-              modern comfort by the Canterbury Golf Course in Kahathuduwa.
+              modern comfort by the Canterbury Golf View in Kahathuduwa.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export function SiteFooter() {
           <div className="space-y-3">
             <div className="font-semibold">Contact</div>
             <div className="text-sm text-muted-foreground">
-              <div>WhatsApp: 0094773540636 / 0094777661193</div>
+              <div>WhatsApp: +94 77 354 0636 / +94 77 766 1193</div>
               <div>Email: {email}</div>
               <div className="mt-2">Sri Lanka</div>
             </div>
@@ -46,12 +46,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t pt-6 text-xs text-muted-foreground md:flex-row">
-          <div>© {new Date().getFullYear()} Misty Greens. All rights reserved.</div>
-          <div>
-            Built with Next.js + TypeScript.
-          </div>
-        </div>
+       
       </div>
     </footer>
   );
