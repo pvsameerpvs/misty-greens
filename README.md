@@ -14,8 +14,8 @@ npm run dev
 Create `.env.local`:
 
 ```bash
-NEXT_PUBLIC_WHATSAPP_NUMBER=9477XXXXXXX
-NEXT_PUBLIC_EMAIL=your@email.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=94777661193
+NEXT_PUBLIC_EMAIL=mistygreens@gmail.com
 ```
 
 WhatsApp booking buttons open a pre-filled message to your number.

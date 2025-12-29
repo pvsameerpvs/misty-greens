@@ -17,7 +17,7 @@ export default function ContactPage() {
         {/* Hero Section */}
         <section className="relative flex h-[50vh] min-h-[400px] items-center justify-center overflow-hidden">
            <Image
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2621&auto=format&fit=crop"
+              src="/CanterburyGolfViewKahathuduwa11.jpeg"
               alt="Contact Misty Greens"
               fill
               className="object-cover brightness-50"

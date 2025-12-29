@@ -129,7 +129,7 @@ export const PROPERTIES: Property[] = [
     headline: "Premium living with uninterrupted views of the Canterbury Golf View.",
     description:
       "Experience premium living overlooking the breathtaking Canterbury Golf View. Perfect for families, executives, or holiday travelers seeking comfort, luxury, and convenience. Situated in Kahathuduwa, Piliyandala – a peaceful residential area with quick access to the Southern Expressway, supermarkets, schools, and restaurants.",
-    imageSrc: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+    imageSrc: "/CanterburyGolfViewKahathuduwa4.jpeg",
     highlights: [
       "Direct golf-course view from the balcony",
       "Large pool + fully equipped gym",
@@ -197,10 +197,30 @@ export const PROPERTIES: Property[] = [
   }
 ],
     galleryImages: [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1571896349842-68ccdac1863f?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512918760383-edce1d90a8f5?q=80&w=2067&auto=format&fit=crop"
+      "/CanterburyGolfViewKahathuduwa1.jpeg",
+      "/CanterburyGolfViewKahathuduwa2.jpeg",
+      "/CanterburyGolfViewKahathuduwa3.jpeg",
+      "/CanterburyGolfViewKahathuduwa4.jpeg",
+      "/CanterburyGolfViewKahathuduwa5.jpeg",
+      "/CanterburyGolfViewKahathuduwa6.jpeg",
+      "/CanterburyGolfViewKahathuduwa7.jpeg",
+      "/CanterburyGolfViewKahathuduwa8.jpeg",
+      "/CanterburyGolfViewKahathuduwa9.jpeg",
+      "/CanterburyGolfViewKahathuduwa10.jpeg",
+      "/CanterburyGolfViewKahathuduwa11.jpeg",
+      "/CanterburyGolfViewKahathuduwa12.jpeg",
+      "/CanterburyGolfViewKahathuduwa13.jpeg",
+      "/CanterburyGolfViewKahathuduwa14.jpeg",
+      "/CanterburyGolfViewKahathuduwa15.jpeg",
+      "/CanterburyGolfViewKahathuduwa16.jpeg",
+      "/CanterburyGolfViewKahathuduwa17.jpeg",
+      "/CanterburyGolfViewKahathuduwa18.jpeg",
+      "/CanterburyGolfViewKahathuduwa19.jpeg",
+      "/CanterburyGolfViewKahathuduwa20.jpeg",
+      "/CanterburyGolfViewKahathuduwa21.jpeg",
+      "/CanterburyGolfViewKahathuduwa22.jpeg",
+      "/CanterburyGolfViewKahathuduwa23.jpeg",
+      "/CanterburyGolfViewKahathuduwa24.jpeg",
     ],
     contactNumbers: ["0094777661193", "0094779557520"]
 

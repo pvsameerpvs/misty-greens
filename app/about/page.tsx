@@ -11,7 +11,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="relative flex h-[60vh] min-h-[500px] items-center justify-center overflow-hidden">
            <Image
-              src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?q=80&w=2670&auto=format&fit=crop"
+              src="/CanterburyGolfViewKahathuduwa9.jpeg"
               alt="Misty Greens Nature"
               fill
               className="object-cover brightness-50"
@@ -51,7 +51,7 @@ export default function AboutPage() {
                </div>
                <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-2xl lg:aspect-[4/3]">
                   <Image
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
+                    src="/CanterburyGolfViewKahathuduwa14.jpeg"
                     alt="Interior Luxury"
                     fill
                     className="object-cover"

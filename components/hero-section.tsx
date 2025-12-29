@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { BookingWidget } from "@/components/booking-widget";
 import { Star, MapPin, Mountain, Home } from "lucide-react";
 import {
@@ -46,28 +45,28 @@ export function HeroSection() {
         
         <div className="pointer-events-none absolute inset-0 hidden md:block">
            {/* Self Check-in Chip */}
-           <div className="absolute top-[55%] right-[25%] animate-pulse cursor-pointer rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md transition-all hover:bg-white/20">
+           {/* <div className="absolute top-[55%] right-[25%] animate-pulse cursor-pointer rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md transition-all hover:bg-white/20">
               <span className="flex items-center gap-2 text-sm font-medium">
                 <span className="h-2 w-2 rounded-full bg-primary" /> 
                 Self Check-in
               </span>
-           </div>
+           </div> */}
 
            {/* Wifi Chip */}
-           <div className="absolute top-[65%] left-[20%] rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md">
+           {/* <div className="absolute top-[65%] left-[20%] rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md">
               <span className="flex items-center gap-2 text-sm font-medium">
                 <span className="h-2 w-2 rounded-full bg-primary" /> 
                 Wi-Fi
               </span>
-           </div>
+           </div> */}
            
            {/* Pet Friendly - Changed to 'Scenic Views' or similar as requested content didn't explicitly mention Pet Friendly but did mention Views */}
-           <div className="absolute top-[65%] right-[20%] rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md">
+           {/* <div className="absolute top-[65%] right-[20%] rounded-full border border-white/30 bg-white/10 px-4 py-2 text-white backdrop-blur-md">
               <span className="flex items-center gap-2 text-sm font-medium">
                  <span className="h-2 w-2 rounded-full bg-primary" /> 
                  Scenic Views
               </span>
-           </div>
+           </div> */}
 
            {/* Mini Map (Bottom Left) */}
  

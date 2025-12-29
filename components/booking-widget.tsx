@@ -24,7 +24,7 @@ export function BookingWidget() {
   const [isGuestOpen, setIsGuestOpen] = useState(false);
 
   // Placeholder number - User needs to update this
-  const WHATSAPP_NUMBER = "94xxxxxxxxx"; 
+  const WHATSAPP_NUMBER = "+94 77 766 1193"; 
 
   const handleBook = () => {
     if (!checkIn || !checkOut) return;
