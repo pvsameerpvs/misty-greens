@@ -199,7 +199,7 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                 <>
                     <div className="border-t pt-10" />
                     <div className="space-y-6">
-                       <h2 className="text-2xl font-bold tracking-tight">Where you'll be</h2>
+                       <h2 className="text-2xl font-bold tracking-tight">Where you&apos;ll be</h2>
                        <div className="overflow-hidden rounded-2xl border bg-muted h-[400px] w-full">
                            <iframe
                              src={property.mapEmbedUrl}
@@ -258,12 +258,13 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
     rel="noreferrer"
     className="flex items-center justify-center gap-2"
   >
-    <img
+    <Image
       src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
       alt="WhatsApp"
       width={20}
       height={20}
       className="h-5 w-5"
+      unoptimized
     />
     Check Availability
   </a>
