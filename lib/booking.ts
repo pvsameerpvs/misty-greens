@@ -1,7 +1,7 @@
 import type { Property } from "@/lib/properties";
 
 export function getWhatsAppNumber() {
-  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "94777661193";
+  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "94779557520";
 }
 
 export function getEmail() {

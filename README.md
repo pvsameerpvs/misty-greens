@@ -14,7 +14,7 @@ npm run dev
 Create `.env.local`:
 
 ```bash
-NEXT_PUBLIC_WHATSAPP_NUMBER=94777661193
+NEXT_PUBLIC_WHATSAPP_NUMBER=94779557520
 NEXT_PUBLIC_EMAIL=mistygreens@gmail.com
 ```
 

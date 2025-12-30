@@ -9,8 +9,8 @@ import { format, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
 
 const ROOMS = [
-  { id: "nuwara-eliya", name: "Nuwara Eliya (Lake View)", price: "Luxury Two-Bedroom" },
-  { id: "kahathuduwa", name: "Kahathuduwa (Golf View)", price: "Luxury Three-Bedroom" },
+  { id: "nuwara-eliya", name: "Nuwara Eliya (Lake View)", price: "Luxury Two-Bedroom", whatsapp: "94779557520" },
+  { id: "kahathuduwa", name: "Kahathuduwa (Golf View)", price: "Luxury Three-Bedroom", whatsapp: "94779557520" },
 ];
 
 const GUESTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -23,9 +23,6 @@ export function BookingWidget() {
   const [isRoomOpen, setIsRoomOpen] = useState(false);
   const [isGuestOpen, setIsGuestOpen] = useState(false);
 
-  // Placeholder number - User needs to update this
-  const WHATSAPP_NUMBER = "+94 77 766 1193"; 
-
   const handleBook = () => {
     if (!checkIn || !checkOut) return;
 
@@ -36,7 +33,7 @@ export function BookingWidget() {
       `*Guests:* ${guests}%0A%0A` +
       `Please confirm availability and rates.`;
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    const url = `https://wa.me/${room.whatsapp}?text=${message}`;
     window.open(url, '_blank');
   };
 
