@@ -9,8 +9,22 @@ import { format, addDays } from "date-fns";
 import { cn } from "@/lib/utils";
 
 const ROOMS = [
-  { id: "nuwara-eliya", name: "Nuwara Eliya (Lake View)", price: "Luxury Two-Bedroom", whatsapp: "94779557520" },
-  { id: "kahathuduwa", name: "Kahathuduwa (Golf View)", price: "Luxury Three-Bedroom", whatsapp: "94779557520" },
+  { 
+    id: "nuwara-eliya", 
+    name: "Nuwara Eliya (Lake View)", 
+    price: "Luxury Two-Bedroom", 
+    whatsapp: "94779557520",
+    city: "Nuwara Eliya",
+    country: "Sri Lanka"
+  },
+  { 
+    id: "kahathuduwa", 
+    name: "Kahathuduwa (Golf View)", 
+    price: "Luxury Three-Bedroom", 
+    whatsapp: "94779557520",
+    city: "Kahathuduwa",
+    country: "Sri Lanka" 
+  },
 ];
 
 const GUESTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -26,14 +40,18 @@ export function BookingWidget() {
   const handleBook = () => {
     if (!checkIn || !checkOut) return;
 
-    const message = `*New Booking Request*%0A%0A` +
-      `*Room:* ${room.name}%0A` +
-      `*Check-in:* ${format(checkIn, "dd MMM yyyy")}%0A` +
-      `*Check-out:* ${format(checkOut, "dd MMM yyyy")}%0A` +
-      `*Guests:* ${guests}%0A%0A` +
-      `Please confirm availability and rates.`;
+    const text = [
+      "Hi Misty Greens 👋",
+      `I’d like to book / inquire about: ${room.name}`,
+      `Location: ${room.city}, ${room.country}`,
+      "",
+      `Dates: ${format(checkIn, "dd MMM yyyy")} to ${format(checkOut, "dd MMM yyyy")}`,
+      `Guests: ${guests}`,
+      "Any special requests: ____"
+    ].join("\n");
 
-    const url = `https://wa.me/${room.whatsapp}?text=${message}`;
+    const encoded = encodeURIComponent(text);
+    const url = `https://wa.me/${room.whatsapp}?text=${encoded}`;
     window.open(url, '_blank');
   };
 

@@ -117,7 +117,7 @@ export const PROPERTIES: Property[] = [
         "/nuwara-eliya-gallary13.jpeg",
         
     ],
-    contactNumbers: ["0094779557520"],
+    contactNumbers: ["94779557520"],
 
   },
   {
@@ -223,7 +223,7 @@ export const PROPERTIES: Property[] = [
       "/CanterburyGolfViewKahathuduwa23.jpeg",
       "/CanterburyGolfViewKahathuduwa24.jpeg",
     ],
-    contactNumbers: ["0094779557520"],
+    contactNumbers: ["94779557520"],
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0045386064266!2d80.01057349999999!3d6.769299199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24dd757393831%3A0x5d2c63a89738e8e5!2sCanterbury%20Golf%20Resort%20Apartments%20and%20Residencies%20by%20Home%20Lands%20Skyline!5e0!3m2!1sen!2sae!4v1767080861808!5m2!1sen!2sae"
 
   }
