@@ -118,7 +118,7 @@ export const PROPERTIES: Property[] = [
         
     ],
     contactNumbers: ["94779557520"],
-
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.376879822235!2d80.7723264!3d6.9647898999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380512d299a81%3A0xdb04a9fce93fd592!2sLake%20View%20Residencies!5e0!3m2!1sen!2sae!4v1767102361642!5m2!1sen!2sae",
   },
   {
     slug: "kahathuduwa-canterbury-golf-view",

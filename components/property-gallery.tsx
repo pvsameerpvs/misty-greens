@@ -41,45 +41,50 @@ export function PropertyGallery({ images }: PropertyGalleryProps) {
   return (
     <>
       {/* Lightbox Overlay */}
+      {/* Lightbox Overlay */}
       {currentImageIndex !== null && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/95 backdrop-blur-sm">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-4 z-[70] text-white/70 hover:bg-white/10 hover:text-white"
-            onClick={closeLightbox}
-          >
-            <X className="h-6 w-6" />
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute left-4 top-1/2 z-[70] -translate-y-1/2 text-white/70 hover:bg-white/10 hover:text-white"
-            onClick={prevImage}
-          >
-            <ChevronLeft className="h-8 w-8" />
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-1/2 z-[70] -translate-y-1/2 text-white/70 hover:bg-white/10 hover:text-white"
-            onClick={nextImage}
-          >
-            <ChevronRight className="h-8 w-8" />
-          </Button>
-
-          <div className="relative h-[85vh] w-[90vw] max-w-7xl">
-            <Image
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-md animate-in fade-in duration-200 p-4 md:p-10">
+          
+          <div className="relative w-full max-w-5xl aspect-video md:aspect-[16/9] flex items-center justify-center bg-transparent rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+             <Image
               src={images[currentImageIndex]}
               alt={`Gallery image ${currentImageIndex + 1}`}
               fill
-              className="object-contain"
+              className="object-contain bg-black/20"
               priority
               quality={100}
             />
-             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-sm font-medium px-4 py-2 bg-black/50 rounded-full backdrop-blur-md">
+            
+             <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-4 top-4 z-[110] text-white hover:bg-black/20 hover:text-white rounded-full h-10 w-10 transition-transform hover:scale-105 bg-black/10 backdrop-blur-sm"
+                onClick={closeLightbox}
+              >
+                <X className="h-5 w-5" />
+              </Button>
+
+            {/* Nav Buttons integrated into the card area for better mobile experience */}
+             <Button
+                variant="ghost"
+                size="icon"
+                className="absolute left-2 md:left-4 top-1/2 z-[110] -translate-y-1/2 text-white hover:bg-black/20 hover:text-white rounded-full h-10 w-10 md:h-12 md:w-12 transition-transform hover:scale-105 bg-black/10 backdrop-blur-sm"
+                onClick={prevImage}
+              >
+                <ChevronLeft className="h-6 w-6 md:h-8 md:w-8" />
+              </Button>
+
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-2 md:right-4 top-1/2 z-[110] -translate-y-1/2 text-white hover:bg-black/20 hover:text-white rounded-full h-10 w-10 md:h-12 md:w-12 transition-transform hover:scale-105 bg-black/10 backdrop-blur-sm"
+                onClick={nextImage}
+              >
+                <ChevronRight className="h-6 w-6 md:h-8 md:w-8" />
+              </Button>
+
+            {/* Counter */}
+             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/90 text-sm font-medium px-4 py-2 bg-black/40 rounded-full backdrop-blur-md border border-white/10">
                 {currentImageIndex + 1} / {images.length}
             </div>
           </div>
