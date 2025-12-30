@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { BookingWidget } from "@/components/booking-widget";
 import { Star, MapPin, Mountain, Home } from "lucide-react";
+import { getProperty } from "@/lib/properties";
 import {
   Dialog,
   DialogContent,
@@ -121,7 +122,7 @@ export function HeroSection() {
                                </h3>
                                <div className="flex-1 overflow-hidden rounded-xl border shadow-inner">
                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80385596489!2d79.996162391696!3d6.820392078696788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25171761667b3%3A0x88c2f254e0c3886f!2sKahathuduwa!5e0!3m2!1sen!2slk!4v1716913456789!5m2!1sen!2slk"
+                                        src={getProperty("kahathuduwa-canterbury-golf-view")?.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80385596489!2d79.996162391696!3d6.820392078696788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25171761667b3%3A0x88c2f254e0c3886f!2sKahathuduwa!5e0!3m2!1sen!2slk!4v1716913456789!5m2!1sen!2slk"}
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}

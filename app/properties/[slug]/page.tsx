@@ -192,7 +192,29 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
                         </div>
                      </div>
                  </div>
-              </div>
+
+              
+              {/* Location Map */}
+              {property.mapEmbedUrl && (
+                <>
+                    <div className="border-t pt-10" />
+                    <div className="space-y-6">
+                       <h2 className="text-2xl font-bold tracking-tight">Where you'll be</h2>
+                       <div className="overflow-hidden rounded-2xl border bg-muted h-[400px] w-full">
+                           <iframe
+                             src={property.mapEmbedUrl}
+                             width="100%"
+                             height="100%"
+                             style={{ border: 0 }}
+                             allowFullScreen
+                             loading="lazy"
+                             referrerPolicy="no-referrer-when-downgrade"
+                           />
+                       </div>
+                    </div>
+                </>
+              )}
+           </div>
               
               {/* Sticky Sidebar */}
               <div className="lg:col-span-1">
