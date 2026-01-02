@@ -53,7 +53,9 @@ export const PROPERTIES: Property[] = [
       "Stylish bathroom with hot water",
       "Private balcony with scenic views",
       "High-speed Wi-Fi",
-      "Smart TV"
+      "Smart TV",
+      "Coffee Machine",
+      "Swimming pool",
     ],
     amenities: [
       "24/7 security",
@@ -148,6 +150,7 @@ export const PROPERTIES: Property[] = [
       "Stylish bathrooms with hot water",
       "Air-conditioned master bedroom",
       "High-speed Wi-Fi",
+      "Coffee Machine",
       "Smart TV"
     ],
     amenities: [
