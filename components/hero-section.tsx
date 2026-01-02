@@ -77,7 +77,7 @@ export function HeroSection() {
                    <DialogTrigger asChild>
                        <div className="h-32 w-32 cursor-pointer overflow-hidden rounded-full border-2 border-white/50 shadow-2xl transition-transform hover:scale-105 hover:border-white pointer-events-auto">
                            <iframe
-                               src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk`}
+                               src={getProperty("nuwara-eliya-lakeview-point")?.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk"}
                                className="h-full w-full object-cover pointer-events-none"
                                style={{ border: 0, opacity: 0.8 }}
                                loading="lazy"
@@ -105,7 +105,7 @@ export function HeroSection() {
                                </h3>
                                <div className="flex-1 overflow-hidden rounded-xl border shadow-inner">
                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk"
+                                        src={getProperty("nuwara-eliya-lakeview-point")?.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31707.009366668383!2d80.7589370783305!3d6.965721666874837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380436d90a077%3A0xc3925769741b6377!2sNuwara%20Eliya!5e0!3m2!1sen!2slk!4v1716913412345!5m2!1sen!2slk"}
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
