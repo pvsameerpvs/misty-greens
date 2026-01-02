@@ -62,8 +62,9 @@ export function SiteHeader({ className }: { className?: string }) {
               key={item.href} 
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors duration-300 hover:text-primary",
-                isScrolled ? "text-muted-foreground" : "text-white/90 hover:text-white text-shadow-sm"
+                "text-sm font-bold transition-all duration-300 hover:text-primary/80",
+                "text-primary",
+                !isScrolled && "bg-white rounded-full px-4 py-2 shadow-sm"
               )}
             >
               {item.label}
@@ -76,7 +77,7 @@ export function SiteHeader({ className }: { className?: string }) {
            {/* Desktop Book Now */}
           <Button 
             className={cn(
-                "hidden md:inline-flex rounded-full font-medium transition-all shadow-md hover:shadow-lg",
+                "hidden md:inline-flex rounded-full font-bold transition-all shadow-md hover:shadow-lg",
                 isScrolled 
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
                     : "bg-white text-primary hover:bg-white/90"
@@ -90,7 +91,7 @@ export function SiteHeader({ className }: { className?: string }) {
              className="md:hidden p-2"
              onClick={() => setIsMobileOpen(true)}
           >
-             <Menu className={cn("h-6 w-6", isScrolled ? "text-foreground" : "text-white")} />
+             <Menu className="h-6 w-6 text-primary" />
           </button>
         </div>
       </div>
@@ -123,7 +124,7 @@ export function SiteHeader({ className }: { className?: string }) {
                         <Link 
                            key={item.href} 
                            href={item.href}
-                           className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
+                           className="text-lg font-bold text-primary transition-colors hover:text-primary/80"
                            onClick={() => setIsMobileOpen(false)}
                         >
                            {item.label}
