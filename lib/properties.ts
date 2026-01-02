@@ -39,29 +39,33 @@ export const PROPERTIES: Property[] = [
     imageSrc: "/nuwara-eliya-lakeview-cover.jpeg",
     highlights: [
       "Stunning panoramic view of Nuwara Eliya city",
+       "Nearby Bar and pub",
       "Beautiful Gregory Lake view from the apartment",
       "Private balcony for sunsets and misty mornings",
-      "Walkable access to key attractions and essentials"
+      "Walkable access to key attractions and essentials",
+     
     ],
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 6,
     features: [
-      "Two spacious, fully furnished bedrooms",
+      "Two spacious, fully furnished Air conditioned bedrooms",
       "Modern living and dining area",
       "Fully equipped kitchen",
-      "Stylish bathroom with hot water",
+      "Stylish 2 bathrooms with hot water",
       "Private balcony with scenic views",
-      "High-speed Wi-Fi",
+      "High-speed Free Wi-Fi",
       "Smart TV",
       "Coffee Machine",
       "Swimming pool",
+
     ],
     amenities: [
       "24/7 security",
-      "Parking facility",
+      "Free Parking facility",
       "Lift access",
       "Backup power",
+      "Laundry facility",
      
     ],
     nearby: [
@@ -78,7 +82,8 @@ export const PROPERTIES: Property[] = [
       "No smoking inside the apartment",
       "No parties or loud music (quiet hours 10 PM – 8 AM)",
       "Respect neighbors and common areas",
-      "Keep the apartment tidy; damages will be charged"
+      "Keep the apartment tidy; damages will be charged",
+      "No pets allowed"
     ],
    faqs: [
   {
@@ -135,6 +140,7 @@ export const PROPERTIES: Property[] = [
     imageSrc: "/CanterburyGolfViewKahathuduwa4.jpeg",
     highlights: [
       "Direct golf-course view from the balcony",
+       "Nearby Restaurant and Pub",
       "Large pool + fully equipped gym",
       "Quick access to Southern Expressway",
       "Great for long-stays and business travel"
@@ -145,11 +151,13 @@ export const PROPERTIES: Property[] = [
     features: [
       "Three spacious bedrooms",
       "Modern living and dining area with balcony",
+      "Free Washing Machine",
       "Stunning Canterbury Golf Course view",
       "Fully equipped kitchen",
+      "Free Washing Machine Facility",
       "Stylish bathrooms with hot water",
-      "Air-conditioned master bedroom",
-      "High-speed Wi-Fi",
+      "Fully Air-conditioned",
+      "High-speed Free Wi-Fi",
       "Coffee Machine",
       "Smart TV"
     ],
@@ -175,7 +183,8 @@ export const PROPERTIES: Property[] = [
       "No smoking inside the apartment",
       "No parties or events",
       "Pool & gym rules must be followed",
-      "Keep noise to a minimum after 10 PM"
+      "Keep noise to a minimum after 10 PM",
+      "No pets allowed"
     ],
     faqs: [
   {
@@ -202,15 +211,12 @@ export const PROPERTIES: Property[] = [
 ],
     galleryImages: [
       "/CanterburyGolfViewKahathuduwa1.jpeg",
-      "/CanterburyGolfViewKahathuduwa2.jpeg",
-      "/CanterburyGolfViewKahathuduwa3.jpeg",
-      "/CanterburyGolfViewKahathuduwa4.jpeg",
-      "/CanterburyGolfViewKahathuduwa5.jpeg",
-      "/CanterburyGolfViewKahathuduwa6.jpeg",
-      "/CanterburyGolfViewKahathuduwa7.jpeg",
+     
       "/CanterburyGolfViewKahathuduwa8.jpeg",
-      "/CanterburyGolfViewKahathuduwa9.jpeg",
-      "/CanterburyGolfViewKahathuduwa10.jpeg",
+  
+      "/CanterburyGolfViewKahathuduwa24.jpeg",
+     
+      "/CanterburyGolfViewKahathuduwa7.jpeg",
       "/CanterburyGolfViewKahathuduwa11.jpeg",
       "/CanterburyGolfViewKahathuduwa12.jpeg",
       "/CanterburyGolfViewKahathuduwa13.jpeg",
@@ -219,12 +225,19 @@ export const PROPERTIES: Property[] = [
       "/CanterburyGolfViewKahathuduwa16.jpeg",
       "/CanterburyGolfViewKahathuduwa17.jpeg",
       "/CanterburyGolfViewKahathuduwa18.jpeg",
+       "/CanterburyGolfViewKahathuduwa2.jpeg",
+      "/CanterburyGolfViewKahathuduwa3.jpeg",
+      "/CanterburyGolfViewKahathuduwa4.jpeg",
+      "/CanterburyGolfViewKahathuduwa5.jpeg",
+      "/CanterburyGolfViewKahathuduwa6.jpeg",
+       "/CanterburyGolfViewKahathuduwa10.jpeg",
+          "/CanterburyGolfViewKahathuduwa9.jpeg",
       "/CanterburyGolfViewKahathuduwa19.jpeg",
       "/CanterburyGolfViewKahathuduwa20.jpeg",
       "/CanterburyGolfViewKahathuduwa21.jpeg",
       "/CanterburyGolfViewKahathuduwa22.jpeg",
       "/CanterburyGolfViewKahathuduwa23.jpeg",
-      "/CanterburyGolfViewKahathuduwa24.jpeg",
+      
     ],
     contactNumbers: ["94779557520"],
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0045386064266!2d80.01057349999999!3d6.769299199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24dd757393831%3A0x5d2c63a89738e8e5!2sCanterbury%20Golf%20Resort%20Apartments%20and%20Residencies%20by%20Home%20Lands%20Skyline!5e0!3m2!1sen!2sae!4v1767080861808!5m2!1sen!2sae"
