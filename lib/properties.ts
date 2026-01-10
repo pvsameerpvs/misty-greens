@@ -215,8 +215,10 @@ export const PROPERTIES: Property[] = [
       "/CanterburyGolfViewKahathuduwa8.jpeg",
   
       "/CanterburyGolfViewKahathuduwa24.jpeg",
+      "/CanterburyGolfViewKahathuduwa25.jpeg",
      
       "/CanterburyGolfViewKahathuduwa7.jpeg",
+      
       "/CanterburyGolfViewKahathuduwa11.jpeg",
       "/CanterburyGolfViewKahathuduwa12.jpeg",
       "/CanterburyGolfViewKahathuduwa13.jpeg",
@@ -237,6 +239,8 @@ export const PROPERTIES: Property[] = [
       "/CanterburyGolfViewKahathuduwa21.jpeg",
       "/CanterburyGolfViewKahathuduwa22.jpeg",
       "/CanterburyGolfViewKahathuduwa23.jpeg",
+     
+      "/CanterburyGolfViewKahathuduwa26.jpeg"
       
     ],
     contactNumbers: ["94779557520"],
