@@ -211,14 +211,10 @@ export const PROPERTIES: Property[] = [
 ],
     galleryImages: [
       "/CanterburyGolfViewKahathuduwa1.jpeg",
-     
       "/CanterburyGolfViewKahathuduwa8.jpeg",
-  
       "/CanterburyGolfViewKahathuduwa24.jpeg",
       "/CanterburyGolfViewKahathuduwa25.jpeg",
-     
       "/CanterburyGolfViewKahathuduwa7.jpeg",
-      
       "/CanterburyGolfViewKahathuduwa11.jpeg",
       "/CanterburyGolfViewKahathuduwa12.jpeg",
       "/CanterburyGolfViewKahathuduwa13.jpeg",
