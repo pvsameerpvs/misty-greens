@@ -15,7 +15,7 @@ Create `.env.local`:
 
 ```bash
 NEXT_PUBLIC_WHATSAPP_NUMBER=94779557520
-NEXT_PUBLIC_EMAIL=mistygreens@gmail.com
+NEXT_PUBLIC_EMAIL=info@mistygreensresidence.com
 ```
 
 WhatsApp booking buttons open a pre-filled message to your number.

@@ -80,8 +80,8 @@ export const PROPERTIES: Property[] = [
     checkOut: "11:00 AM",
     houseRules: [
       "No smoking inside the apartment",
-      "No parties or loud music (quiet hours 10 PM – 8 AM)",
       "Respect neighbors and common areas",
+      "No parties or loud music (quiet hours 10 PM – 8 AM)",
       "Keep the apartment tidy; damages will be charged",
       "No pets allowed"
     ],
@@ -151,10 +151,9 @@ export const PROPERTIES: Property[] = [
     features: [
       "Three spacious bedrooms",
       "Modern living and dining area with balcony",
-      "Free Washing Machine",
+      "Free Washing Machine Facility",
       "Stunning Canterbury Golf Course view",
       "Fully equipped kitchen",
-      "Free Washing Machine Facility",
       "Stylish bathrooms with hot water",
       "Fully Air-conditioned",
       "High-speed Free Wi-Fi",
@@ -162,6 +161,7 @@ export const PROPERTIES: Property[] = [
       "Smart TV"
     ],
     amenities: [
+      "Nearby Restaurant and Pub accessibility",
       "24/7 security with gated entrance",
       "Large swimming pool",
       "Fully equipped gym",
@@ -184,6 +184,8 @@ export const PROPERTIES: Property[] = [
       "No parties or events",
       "Pool & gym rules must be followed",
       "Keep noise to a minimum after 10 PM",
+      "No parties or loud music (quiet hours 10 PM – 8 AM)",
+      "Keep the apartment tidy; damages will be charged",
       "No pets allowed"
     ],
     faqs: [

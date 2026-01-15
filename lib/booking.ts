@@ -5,7 +5,7 @@ export function getWhatsAppNumber() {
 }
 
 export function getEmail() {
-  return process.env.NEXT_PUBLIC_EMAIL || "mistygreens@gmail.com";
+  return process.env.NEXT_PUBLIC_EMAIL || "info@mistygreensresidence.com";
 }
 
 export function buildWhatsAppLink(property: Property) {
