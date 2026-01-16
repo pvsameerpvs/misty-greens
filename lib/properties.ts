@@ -135,8 +135,7 @@ export const PROPERTIES: Property[] = [
     region: "Western Province",
     country: "Sri Lanka",
     headline: "Premium living with uninterrupted views of the Canterbury Golf View.",
-    description:
-      "Experience premium living overlooking the breathtaking Canterbury Golf View. Perfect for families, executives, or holiday travelers seeking comfort, luxury, and convenience. Situated in Kahathuduwa, Piliyandala – a peaceful residential area with quick access to the Southern Expressway, supermarkets, schools, and restaurants.",
+    description:"Experience premium living overlooking the breathtaking Canterbury Golf View. Perfect for families, executives, or holiday travelers seeking comfort, luxury, and convenience. Located in Kahathuduwa, Piliyandala, this peaceful residential setting offers quick access to the Southern Expressway, supermarkets, schools, nearby restaurant and pub, making everyday living and leisure effortlessly convenient.",
     imageSrc: "/CanterburyGolfViewKahathuduwa4.jpeg",
     highlights: [
       "Direct golf-course view from the balcony",
@@ -181,9 +180,9 @@ export const PROPERTIES: Property[] = [
     checkOut: "11:00 AM",
     houseRules: [
       "No smoking inside the apartment",
-      "No parties or events",
+      
       "Pool & gym rules must be followed",
-      "Keep noise to a minimum after 10 PM",
+      
       "No parties or loud music (quiet hours 10 PM – 8 AM)",
       "Keep the apartment tidy; damages will be charged",
       "No pets allowed"
