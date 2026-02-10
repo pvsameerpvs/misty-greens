@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, ArrowRight, MapPin, Clock } from "lucide-react";
@@ -7,12 +8,57 @@ import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
+export const metadata: Metadata = {
+  title: "Contact Us | Book Your Luxury Stay",
+  description: "Get in touch with Misty Greens to book your luxury holiday apartment in Sri Lanka. Contact us via WhatsApp, email, or phone for reservations in Nuwara Eliya and Kahathuduwa.",
+};
+
 export default function ContactPage() {
   const email = getEmail();
   const phone = getWhatsAppNumber();
 
   return (
-
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Misty Greens Residence",
+            "image": "https://mistygreensresidence.com/logo.png",
+            "@id": "https://mistygreensresidence.com",
+            "url": "https://mistygreensresidence.com",
+            "telephone": "+94779557520",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Nuwara Eliya & Kahathuduwa",
+              "addressLocality": "Nuwara Eliya",
+              "addressRegion": "Central Province",
+              "addressCountry": "LK"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 6.9657,
+              "longitude": 80.7589
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          })
+        }}
+      />
       <main>
         {/* Hero Section */}
         <section className="relative flex h-[50vh] min-h-[400px] items-center justify-center overflow-hidden">
@@ -152,5 +198,6 @@ export default function ContactPage() {
         </section>
       </main>
   
+    </>
   );
 }

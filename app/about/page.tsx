@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
-import {  Mountain, Home, Leaf, ShieldCheck } from "lucide-react";
+import { Mountain, Home, Leaf, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About Our Luxury Apartments",
+  description: "Learn about Misty Greens, Sri Lanka's premier provider of luxury holiday apartments in Nuwara Eliya and Kahathuduwa. Discover our philosophy of nature-meets-luxury.",
+};
 
 export default function AboutPage() {
   return (

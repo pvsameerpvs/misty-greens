@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { PROPERTIES } from "@/lib/properties";
 import { ApartmentSection } from "@/components/apartment-section";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Luxury Holiday Apartments Collection",
+  description: "Browse our exclusive collection of luxury holiday apartments in Sri Lanka. From the misty mountains of Nuwara Eliya to the greens of Kahathuduwa.",
+};
 
 export default function PropertiesPage() {
   return (

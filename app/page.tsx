@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero-section";
 import { ApartmentSection } from "@/components/apartment-section";
 import { PROPERTIES } from "@/lib/properties";
+
+export const metadata: Metadata = {
+  title: "Misty Greens | Premium Holiday Apartments in Sri Lanka",
+  description: "Experience the ultimate luxury escape at Misty Greens Residence. Book premium holiday apartments in Nuwara Eliya and Kahathuduwa with stunning views.",
+};
 
 export default function HomePage() {
   return (

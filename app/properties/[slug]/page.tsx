@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -8,9 +9,42 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PropertyGallery } from "@/components/property-gallery";
 
-
 export function generateStaticParams() {
   return PROPERTIES.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const property = getProperty(params.slug);
+  
+  if (!property) {
+    return {
+      title: "Property Not Found",
+    };
+  }
+
+  return {
+    title: property.name,
+    description: property.headline || property.description.slice(0, 160),
+    openGraph: {
+      title: `${property.name} | Misty Greens`,
+      description: property.headline || property.description.slice(0, 160),
+      url: `https://mistygreensresidence.com/properties/${property.slug}`,
+      images: [
+        {
+          url: property.imageSrc,
+          width: 1200,
+          height: 630,
+          alt: property.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: property.name,
+      description: property.headline || property.description.slice(0, 160),
+      images: [property.imageSrc],
+    },
+  };
 }
 
 export default function PropertyDetailsPage({ params }: { params: { slug: string } }) {
@@ -18,9 +52,81 @@ export default function PropertyDetailsPage({ params }: { params: { slug: string
   if (!property) return notFound();
 
   return (
-
     <div className="min-h-screen bg-background pb-20">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VacationRental",
+            "name": property.name,
+            "description": property.description,
+            "image": [property.imageSrc, ...property.galleryImages.slice(0, 5)],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": property.city,
+              "addressRegion": property.region,
+              "addressCountry": property.country
+            },
+            "numberOfRooms": property.bedrooms,
+            "occupancy": {
+              "@type": "QuantitativeValue",
+              "value": property.maxGuests
+            },
+            "amenityFeature": [
+              ...property.features.map(f => ({ "@type": "LocationFeatureSpecification", "name": f, "value": true })),
+              ...property.amenities.map(a => ({ "@type": "LocationFeatureSpecification", "name": a, "value": true }))
+            ],
+            "url": `https://mistygreensresidence.com/properties/${property.slug}`
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mistygreensresidence.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Properties",
+                "item": "https://mistygreensresidence.com/properties"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": property.name,
+                "item": `https://mistygreensresidence.com/properties/${property.slug}`
+              }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": property.faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          })
+        }}
+      />
       <main>
           {/* Hero Banner */}
           <div className="relative h-[60vh] min-h-[500px] w-full lg:h-[70vh]">
