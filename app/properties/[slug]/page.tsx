@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: `${property.name} | Misty Greens`,
       description: property.headline || property.description.slice(0, 160),
-      url: `https://mistygreensresidence.com/properties/${property.slug}`,
+      url: `https://mistygreensresidence.com/properties/${property.slug}/`,
       images: [
         {
           url: property.imageSrc,

@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { BookingWidget } from "@/components/booking-widget";
-import { Star, MapPin, Mountain, Home } from "lucide-react";
+import { Star, MapPin, Mountain, Home, Heart } from "lucide-react";
 import { getProperty } from "@/lib/properties";
 import {
   Dialog,
@@ -40,6 +41,13 @@ export function HeroSection() {
              Nature’s Luxury Escape
           </p>
           <p className="mt-2 text-lg font-light text-white/90 drop-shadow-sm">Sri Lanka</p>
+          
+          {/* <Link href="/blog/valentines-escape-nuwara-eliya" className="mt-8 group animate-bounce">
+             <div className="flex items-center gap-2 rounded-full bg-pink-600/90 px-6 py-2 text-white backdrop-blur-md transition-all hover:bg-pink-700">
+                <Heart className="h-4 w-4 fill-white" />
+                <span className="text-sm font-bold tracking-tight">Romantic Valentine&apos;s Getaway</span>
+             </div>
+          </Link> */}
         </div>
 
         {/* Floating Elements */}

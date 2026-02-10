@@ -8,8 +8,9 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const nav = [
-   { href: "/", label: "Home" },
-   { href: "/about", label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
   { href: "/properties/nuwara-eliya-lakeview-point", label: "Nuwara Eliya" },
   { href: "/properties/kahathuduwa-canterbury-golf-view", label: "Kahathuduwa" },
   { href: "/contact", label: "Contact" }

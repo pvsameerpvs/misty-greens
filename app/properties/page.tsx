@@ -18,7 +18,7 @@ export default function PropertiesPage() {
         {/* Properties Hero */}
         <section className="relative flex h-[50vh] min-h-[400px] items-center justify-center overflow-hidden">
            <Image
-              src="/nuwara-eliya-gallary13.jpeg"
+              src="/nuwara-eliya-gallery13.jpeg"
               alt="Misty Greens Collection"
               fill
               className="object-cover brightness-50"

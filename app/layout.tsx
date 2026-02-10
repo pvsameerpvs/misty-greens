@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mistygreensresidence.com'), // Official Domain
+  metadataBase: new URL('https://mistygreensresidence.com/'), // Official Domain
   title: {
     default: "Misty Greens | Luxury Holiday Apartments in Sri Lanka",
     template: "%s | Misty Greens Sri Lanka",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: "Misty Greens | Nature’s Luxury Escape in Sri Lanka",
     description:
       "Luxury holiday apartments in Nuwara Eliya and Kahathuduwa. Enjoy breathtaking scenic views and premium comfort for your next escape.",
-    url: 'https://mistygreensresidence.com',
+    url: 'https://mistygreensresidence.com/',
     siteName: 'Misty Greens Sri Lanka',
     locale: 'en_LK',
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/nuwara-eliya-lakeview-cover.jpeg',
         width: 1200,
         height: 630,
         alt: 'Misty Greens Luxury Holiday Apartments',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Misty Greens | Luxury Holiday Apartments Sri Lanka",
     description: "Experience premium comfort in Nuwara Eliya and Kahathuduwa. Book your luxury stay today.",
-    images: ['/og-image.jpg'],
+    images: ['/nuwara-eliya-lakeview-cover.jpeg'],
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Misty Greens Sri Lanka",
-              "url": "https://mistygreensresidence.com",
+              "url": "https://mistygreensresidence.com/",
               "logo": "https://mistygreensresidence.com/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Misty Greens",
-              "url": "https://mistygreensresidence.com",
+              "url": "https://mistygreensresidence.com/",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://mistygreensresidence.com/search?q={search_term_string}",
